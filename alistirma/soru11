@@ -1,0 +1,8 @@
+#alıştırmalar 1, soru 11
+
+a=range(1,100000000)
+for i in a:
+    i=int(i)
+    if i%125==i%200 and i%200==i%350:
+        i
+print(i)
