@@ -1,0 +1,9 @@
+#alıştırmalar 1, soru 14
+
+a=range(10000,100000)
+for i in a:
+    i=str(i)
+    for n in a:
+        n=str(n)
+        if int(i)*int(n)==121212 and int(i)-int(n)>121211:
+            print(i,n)
