@@ -1,0 +1,16 @@
+# alıştırmalar 1, soru 17
+
+def palindromikmı(i):
+    i=str(i)
+    if 100<=int(i)<1000:
+        if i[0]==i[2]:
+            return (i," palindromik bir sayıdır.")
+        else:
+            return (i," palindromik bir sayı değildir.")
+    elif 1000<=int(i)<10000:
+        if i[0]==i[3] and i[1]==i[2]:
+            return (i," palindromik bir sayıdır.")
+        else:
+            return (i," palindromik bir sayı değildir.")
+    else:
+        return("3 veya 4 basamaklı bir sayı giriniz")
