@@ -1,0 +1,9 @@
+# alıştırmalar 1, soru 16
+
+def asalmı(n):
+    for x in range(2,n):
+        if n%x==0:
+            return(n,"eşittir",x,"*",n//x)
+            break
+    else:
+        return(n," asal sayıdır")
