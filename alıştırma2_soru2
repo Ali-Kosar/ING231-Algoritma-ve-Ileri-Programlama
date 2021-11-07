@@ -1,0 +1,11 @@
+#alıştırmalar 2 soru 2
+
+def topla(n):
+    #base case
+    if n==0:
+        return 0
+    #revursive
+    else:
+        return n+topla(n-1)
+
+print(topla(5))
