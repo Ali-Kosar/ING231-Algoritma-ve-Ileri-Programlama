@@ -1,0 +1,54 @@
+#roma rakamı oyunu
+
+a=""
+n=input("1 ile 3999 arasında bir sayı giriniz: ")
+while (int(n)<1) or (3999<int(n)):
+       n=input("1 ile 3999 arasında bir sayı giriniz, kurallara riayet ediniz: ")
+
+l=len(n)
+for i in range(-l,0,1):
+    if i==-1:
+        if int(n[0])==0:
+            a+=""
+        elif int(n[i])==9:
+           # 0<int(n[0]) and int(n[0])<=3:
+            a+="IX"
+            #a+="I"*int(n[i])
+        elif int(n[i])==4:
+            a+="IV"
+        elif int(n[i])==5:
+            a+="V"
+        elif 5<int(n[i]) and int(n[i])<9:
+            a+="V"+"I"*(int(n[i])%5)
+        else:
+            a+="I"*int(n[i])
+    elif i==-2:
+        if int(n[i])==0:
+            a+=""
+        elif 0<int(n[i]) and int(n[i])<4:
+            a+="X"*int(n[i])
+        elif int(n[i])==4:
+            a+="XL"
+        elif int(n[i])==5:
+            a+="L"
+        elif 5<int(n[i]) and int(n[i])<9:
+            a+="L"+"X"*(int(n[i])%5)
+        else:
+            a+="XC"
+    elif i==-3:
+        if int(n[i])==0:
+            a+=""
+        elif 0<int(n[i]) and int(n[i])<4:
+            a+="C"*int(n[i])
+        elif int(n[i])==4:
+            a+="CD"
+        elif int(n[i])==5:
+            a+="D"
+        elif 5<int(n[i]) and int(n[i])<9:
+            a+="D"+"C"*(int(n[i])%5)
+        else:
+            a+="CM"
+    elif i==-4:
+        a+="M"*int(n[i])
+        
+print(a)
