@@ -1,0 +1,29 @@
+
+a=[]
+def sırala(n):
+    l=len(n)
+    b=0
+    p=0
+    for j in range(0,l,1):
+    
+        for i in range(0,l-j-1,1):
+            if i<l-2:
+                if n[i]>n[i+1]:
+                    a.append(n[i])
+                    n[i]=n[i+1]
+                    n[i+1]=a[0]
+                    a.pop(0)
+                    print(n)
+                else:
+                    print(n)
+            else:
+                if n[l-2]>n[l-1]:
+                    a.append(n[l-2])
+                    n[l-2]=n[l-1]
+                    n[l-1]=a[0]
+                    a.pop(0)
+                    print(n)
+                else:
+                    print(n)
+                    
+                print(n)
